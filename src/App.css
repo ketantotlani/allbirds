@@ -1,0 +1,85 @@
+*{
+  font-family: 'Roboto Mono', monospace;
+}
+a{
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+.links{
+  justify-content: space-between;
+}
+.logo{
+  width: 80px;
+}
+.linkscss{
+  color: black !important;
+  font-weight: 400;
+}
+.navclass {
+  -webkit-box-shadow: 20px 20px 20px #FC0;
+  -moz-box-shadow:    20px 20px 20px #FC0;
+  box-shadow:         0px 20px 20px rgb(22, 19, 10);
+  z-index:999;
+  background-color: white;
+}
+.textdiv{
+  position: relative;
+  /* text-align: center; */
+  
+}
+.herotxt{
+  position: absolute;
+  top: 40%;
+  bottom: 50%;
+  left: 38%;
+  right: 28%;
+  color: white;
+	font-size: 3em ;
+  font-weight: bolder;
+
+}
+.textdiv .a1{
+  position: absolute;
+  top: 75%;
+  border: none;
+  left: 33.2vw;
+}
+.textdiv .a2{
+  border: none;
+  position: absolute;
+  top: 75%;
+  right: 32vw;
+}
+.nike-shoe-card {
+  /* padding: 2em; */
+}
+
+.nike-shoe-img {
+  height: 25em;
+  width: 100%;
+  /* border-radius: 10px; */
+}
+.subscribeinp{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 7px;
+  width: 50%;
+}
+.footer{
+ background-color: #212A2F;
+}
+@media(max-width:1000px){
+  .herotxt{
+    display: none;
+  
+  }
+  .textdiv .a1{
+    display: none;
+  }
+  .textdiv .a2{
+    display: none;
+  }
+
+}
