@@ -1,11 +1,6 @@
 import React, { Component } from 'react'
 import Logo from '../Assets/allbirds-logo.svg'
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
+
 
 export default class Nav extends Component {
     render() {
@@ -20,11 +15,11 @@ export default class Nav extends Component {
                     </button>
                     <div className=" collapse navbar-collapse  justify-content-end " id="navbarNavAltMarkup">
                         <div className="navbar-nav ">
-                            <a className="nav-link mx-1 linkscss" href="#mens">MEN</a>
-                            <a className="nav-link mx-1 linkscss" href="#womens">WOMEN</a>
-                            <a className="nav-link mx-1 linkscss" href="#newarrivals">NEW ARRIVALS</a>
-                            <a className="nav-link mx-1 linkscss" href="#sustainability">SUSTAINABILITY</a>
-                            <a className="nav-link mx-1 linkscss" href="#suscribe">SUBSCRIBE</a>
+                            <a className="nav-link mx-1 linkscss"  onClick={() => document.getElementById('mens').scrollIntoView({ behavior: 'smooth' }- "30px")}>MEN</a>
+                            <a className="nav-link mx-1 linkscss" onClick={() => document.getElementById('womens').scrollIntoView({ behavior: 'smooth' }- "30px")}>WOMEN</a>
+                            <a className="nav-link mx-1 linkscss" onClick={() => document.getElementById('newarrivals').scrollIntoView({ behavior: 'smooth' }- "40px")} >NEW ARRIVALS</a>
+                            <a className="nav-link mx-1 linkscss" onClick={() => document.getElementById('sustainability').scrollIntoView({ behavior: 'smooth' }- "200px")}>SUSTAINABILITY</a>
+                            <a className="nav-link mx-1 linkscss" onClick={() => document.getElementById('suscribe').scrollIntoView({ behavior: 'smooth' })}>SUBSCRIBE</a>
                         </div>
                     </div>
                 </div>

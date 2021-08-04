@@ -15,6 +15,7 @@ a{
 .linkscss{
   color: black !important;
   font-weight: 400;
+  cursor: pointer;
 }
 .navclass {
   -webkit-box-shadow: 20px 20px 20px #FC0;

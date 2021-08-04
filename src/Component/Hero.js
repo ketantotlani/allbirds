@@ -15,8 +15,8 @@ export default class Hero extends Component {
                         Earth-Friendly.
                         Run-Ready.
                         </h1>
-                        <a className="btn btn-light pt-2 pb-2 py-4 px-4 a1" style={{fontWeight: "bold"}}>SHOP MEN</a>
-                        <a className="btn btn-light pt-2 pb-2 py-4 px-4 a2" style={{fontWeight: "bold"}}>SHOP WOMEN</a>
+                        <a className="btn btn-light pt-2 pb-2 py-4 px-4 a1" onClick={() => document.getElementById('mens').scrollIntoView({ behavior: 'smooth' }- "30px")} style={{fontWeight: "bold"}}>SHOP MEN</a>
+                        <a className="btn btn-light pt-2 pb-2 py-4 px-4 a2" onClick={() => document.getElementById('womens').scrollIntoView({ behavior: 'smooth' }- "30px")} style={{fontWeight: "bold"}}>SHOP WOMEN</a>
                     </div>
 
                 </div>
