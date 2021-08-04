@@ -67,7 +67,7 @@ export default class Women extends Component {
 
 
                 </div>
-                <hr />
+                {/* <hr /> */}
             </section>
         )
     }

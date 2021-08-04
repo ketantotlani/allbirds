@@ -66,7 +66,7 @@ export default class NewArrivals extends Component {
 
 
                 </div>
-                <hr />
+                {/* <hr /> */}
             </section>
         )
     }

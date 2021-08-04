@@ -66,7 +66,7 @@ export default class Men extends Component {
 
 
                 </div>
-                <hr />
+                {/* <hr /> */}
             </section>
         )
     }
