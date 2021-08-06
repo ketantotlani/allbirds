@@ -1,12 +1,24 @@
-import React, { Component } from 'react'
-import Shoe1 from '../Assets/New1.jfif'
-import Shoe2 from '../Assets/New2.jfif'
-import Shoe3 from '../Assets/New3.webp'
+import React, { useState,useContext, useEffect } from 'react'
+import {GlobalState} from '../GlobalState'
 
 
 
-export default class NewArrivals extends Component {
-    render() {
+
+export default function NewArrivals() {
+    const [state, cart, setCart]  = useContext(GlobalState);
+
+
+    const [newarrivals, setNewarrivals] = useState([])
+    useEffect(() => {
+        function getNew() {
+            state.userAPI.getAll().then(res => {
+                console.log(res.data);
+                setNewarrivals(res.data.newarrivals);
+            }).catch(err => console.log(err));   
+        }
+        getNew();
+    }, [])
+    
         
         return (
             <section id="newarrivals" className="container my-4">
@@ -14,60 +26,37 @@ export default class NewArrivals extends Component {
                 NEW ARRIVALS
                 </h2>
                 <div className="row row-cols-1 row-cols-md-3 g-5 ">
-                    <div className="col">
+                {
+                        newarrivals.map((data,key) => {
+                            return (
+                                <div className="col" key={key}>
                         <div className="card h-100 shadow nike-shoe-card">
-                            <img src={Shoe1} className="card-img-top nike-shoe-img casual-shoe-img" alt="" />
+                            <img src={data.src} className="card-img-top nike-shoe-img casual-shoe-img" alt="" />
                             <div className="card-body">
                                 <h5 className="card-title">
-                                Women's Tree Runners <hr />
+                                    {data.title} <hr />
                                 </h5>
                                 <p className="card-text">
-                                Made With Eucalyptus Tree
+                                {data.text}
                             </p>
                             
+                            <div className="card-footer flex justify-content-center">
+                             <p className=" price font-monospace">${data.price}</p>
+
+                                <button className="btn btn-dark w-100" onClick={()=> cart.some(p=>p.data.id === data.id)?  []  : setCart(prevCart => [...prevCart, {data}] )}>Add to Cart</button>
+                                
+                            </div>
                             </div>
                             
 
                         </div>
                     </div>
-                    <div className="col">
-                        <div className="card h-100 shadow nike-shoe-card">
-                            <img src={Shoe2} className="card-img-top nike-shoe-img casual-shoe-img" alt="" />
-                            <div className="card-body">
-                                <h5 className="card-title">
-                                Men's Wool Dasher Mizzles <hr />
-                                </h5>
-                                <p className="card-text">
-                                Water-Repellent Sneaker
-                            </p>
-                            
-                            </div>
-                            
-
-                        </div>
-                    </div>
-
-                    <div className="col">
-                        <div className="card h-100 shadow nike-shoe-card">
-                            <img src={Shoe3} className="card-img-top nike-shoe-img casual-shoe-img" alt="" />
-                            <div className="card-body">
-                                <h5 className="card-title">
-                                Women's Tree Dashers <hr />
-                                </h5>
-                                <p className="card-text">
-                                Supportive Dual-Density Sugarcane Midsole
-                            </p>
-                            
-                            </div>
-                            
-
-                        </div>
-                    </div>
-
-
+                            )
+                        })
+                    }
                 </div>
                 {/* <hr /> */}
             </section>
         )
-    }
+    
 }

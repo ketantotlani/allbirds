@@ -6,25 +6,20 @@ import {
 } from "react-router-dom";
 import './App.css';
 import Nav from './Nav/Nav';
-import Hero from './Component/Hero'
-import Men from "./Component/Men";
-import Women from "./Component/Women";
-import NewArrivals from "./Component/NewArrivals";
-import Sustainability from "./Component/Sustainability";
-import Suscribe from "./Component/Suscribe";
-import Footer from "./Component/Footer";
+import Home from "./Component/Home";
+import Cart from './Component/Cart';
+import Pnf from './Component/Pnf'
+
 
 function App() {
   return (
     <Router >
         <Nav/>
-        <Hero/>
-        <Men/>
-        <Women/>
-        <NewArrivals/>
-        <Sustainability/>
-        <Suscribe/>
-        <Footer/>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/cart" component={Cart} />
+          <Route  component={Pnf} />
+        </Switch>
     </Router>
   );
 }

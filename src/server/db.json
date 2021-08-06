@@ -1,0 +1,71 @@
+{
+    "mensshoes": [
+      {
+        "id": 1,
+        "title": "Tree Runner",
+        "text": "Light and Breezy Sneaker",
+        "src": "https://cdn.allbirds.com/image/upload/f_auto,q_auto/v1/production/categoryCarouselCard/en-US/images/3Q3hGdXO4Y1Pe6rkZheAbM/1",
+        "price": 105
+      },
+      {
+        "id": 2,
+        "title": "Tree Dasher",
+        "text": "Daily Running Shoe",
+        "src": "https://cdn.allbirds.com/image/upload/f_auto,q_auto/v1/production/categoryCarouselCard/en-US/images/6zakQ3mbPCXQU23h5vsEe3/2",
+        "price": 125
+      },
+      {
+        "id": 3,
+        "title": "Wool Pipers",
+        "text": "Soft Feel, Cozy Material",
+        "src": "https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_834,f_auto,q_auto,c_fill,ar_0.7433155080213903/https://images.ctfassets.net/9uo1qvvet3xa/7uY9bKD6rvzwEFWWGikC1E/1ff95c63c8fbe64a2e13d377ec762888/Desktop_collection_page_lifestyle_Male.png",
+        "price": 102
+      }
+    ],
+     "womensshoes": [
+        {
+            "id": 1,
+            "title": "Women's Tree Pipers",
+            "text": "Classic Low Top Sneaker",
+            "src": "https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_1000,f_auto,q_auto,b_rgb:f5f5f5/https://cdn.shopify.com/s/files/1/1104/4168/products/TP-PDP-Lifestyle_Grid-Women_56d4dc47-2448-44e9-bace-bdb4d020472d.jpg?v=1621045906",
+            "price": 142
+          },
+          {
+            "id": 2,
+            "title": "Women's Tree Breezers",
+            "text": "Breezy Feel, Light Material",
+            "src": "https://images.ctfassets.net/9uo1qvvet3xa/5z15MhGhiGhUfHQIW3btmF/e5813ddbb066ed7051bb2805a2786a07/FebLaunch20_lifestyle_global_TB_Poppy_Succulent_00594.jpg",
+            "price": 127
+          },
+          {
+            "id": 3,
+            "title": "Women's Tree Loungers ",
+            "text": "Soft Feel, Cozy Material",
+            "src": "https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_834,f_auto,q_auto,c_fill,ar_0.7433155080213903/https://images.ctfassets.net/9uo1qvvet3xa/B46wNlULszrBg1zpNaIEY/09d6a6e4432ea0e1e4315f0d090e1a42/TL-Parent_Collection-Women.jpg",
+            "price": 95
+          } 
+    ],
+    "newarrivals": [
+        {
+            "id": 1,
+            "title": "Women's Tree Runners",
+            "text": "Made With Eucalyptus Tree",
+            "src": "https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_1000,f_auto,q_auto,b_rgb:f5f5f5/https://cdn.shopify.com/s/files/1/1104/4168/products/Women_s_Tree_Runners_-_Charcoal__Charcoal_Sole__-_imagePair_3a727006-8713-4ae6-a6c9-1c3156e5489c.png?v=1618598526",
+            "price": 175
+          },
+          {
+            "id": 2,
+            "title": "Men's Wool Runner-up Mizzles",
+            "text": "Water-Repellent Sneaker",
+            "src": "https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_1000,f_auto,q_auto,b_rgb:f5f5f5/https://cdn.shopify.com/s/files/1/1104/4168/products/WU1MSVN_SHOE_PAIR_GLOBAL_MENS_WOOL_RUNNER_UP_MIZZLE_SAVANNA_NIGHT_dd7d3733-2840-463d-b600-63cfa5ac3c5a.png?v=1598996540",
+            "price": 195
+          },
+          {
+            "id": 3,
+            "title": "Women's Tree Dashers",
+            "text": "Supportive Dual-Density Sugarcane Midsole",
+            "src": "https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_1000,f_auto,q_auto,b_rgb:f5f5f5/https://cdn.shopify.com/s/files/1/1104/4168/products/TD1MOGL_SHOE_PAIR_GLOBAL_MENS_TREE_DASHER_PUKEKO_WHITE.png?v=1601053460",
+            "price": 149
+          }
+    ]
+  }

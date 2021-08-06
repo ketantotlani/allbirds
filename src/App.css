@@ -72,6 +72,10 @@ a{
 }
 .footer{
  background-color: #212A2F;
+
+}
+.price{
+  font-size: 20px;
 }
 @media(max-width:1000px){
   .herotxt{
@@ -84,5 +88,46 @@ a{
   .textdiv .a2{
     display: none;
   }
+}
+.dropdown:last-child .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+.cartitem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  margin-bottom: 20px;
+}
+.cartItemImg{
+  border-radius: 10%;
+  width: 60px;
+  height: 60px;
+  margin-right: 30px;
+  object-fit: cover;
+}
+.cartItemDetial{
+  display: flex;
+  flex: 1;
+  padding: 0 20px;
+  flex-direction: column;
+}
+.textcart{
+  font-size: 12px;
+}
+.filters{
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #1C1F23;
 
+}
+.filters > span{
+  padding-bottom: 20px;
+}
+.title{
+  font-size: 30px;
 }
