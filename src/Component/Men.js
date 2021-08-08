@@ -42,8 +42,15 @@ export default function Men() {
                             </p>
                             <div className="card-footer flex justify-content-center">
                              <p className=" price font-monospace">${data.price}</p>
-
+                                {
+                                    (cart.some(p => p.data.id === data.id) ? <button className="btn btn-danger w-100" onClick={()=> setCart(prevCart => prevCart.filter((item) => item.data.id !== data.id))}>Remove This Item</button> :
+                                    (
                                 <button className="btn btn-dark w-100" onClick={()=> cart.some(p=>p.data.id === data.id)?  []  : setCart(prevCart => [...prevCart, {data}] )}>Add to Cart</button>
+
+                                    )
+                                    )
+                                }
+                                {/* <button className="btn btn-dark w-100" onClick={()=> cart.some(p=>p.data.id === data.id)?  []  : setCart(prevCart => [...prevCart, {data}] )}>Add to Cart</button> */}
                                 
                             </div>
                             </div>
