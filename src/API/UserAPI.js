@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const axiosInstance = axios.create({
-    baseURL: 'https://api.npoint.io/c38e40acb58d06764b82'
+    baseURL: 'https://api.jsonbin.io/v3/b/610bc629f098011544ababcc'
 });
 
 export const UserAPI = {
