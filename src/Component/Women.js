@@ -13,7 +13,7 @@ export default function Women() {
         function getAll() {
             state.userAPI.getAll().then(res => {
                 console.log(res.data);
-                setWomens(res.data.womensshoes);
+                setWomens(res.data.record.womensshoes);
             }).catch(err => console.log(err));
         }
         getAll();

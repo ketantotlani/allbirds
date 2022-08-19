@@ -13,7 +13,7 @@ export default function NewArrivals() {
         function getNew() {
             state.userAPI.getAll().then(res => {
                 console.log(res.data);
-                setNewarrivals(res.data.newarrivals);
+                setNewarrivals(res.data.record.newarrivals);
             }).catch(err => console.log(err));
         }
         getNew();

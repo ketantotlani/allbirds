@@ -13,7 +13,7 @@ export default function Men() {
         function getAll() {
             state.userAPI.getAll().then(res => {
                 console.log(res.data);
-                setMens(res.data.mensshoes);
+                setMens(res.data.record.mensshoes);
             }).catch(err => console.log(err));
         }
         getAll();
